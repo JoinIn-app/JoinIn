@@ -2,22 +2,18 @@ package pl.joinin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.context.annotation.Bean;
+import org.thymeleaf.extras.java8time.dialect.Java8TimeDialect;
 
-@Controller
 @SpringBootApplication
-public class JoinInApplication {
-
-	@RequestMapping(value = "/",  produces = "text/plain;charset=UTF-8")
-    @ResponseBody
-    String home() {
-      return "Hello World!";
+public class Application {
+	
+	@Bean
+    public Java8TimeDialect java8TimeDialect() {
+        return new Java8TimeDialect();
     }
 	
-	
 	public static void main(String[] args) {
-		SpringApplication.run(JoinInApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 }
