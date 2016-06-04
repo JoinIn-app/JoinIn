@@ -7,7 +7,7 @@
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.6/css/bootstrap.min.css"
           th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.min.css}"
           rel="stylesheet" media="screen" />
-    <link href="../static/css/core.css"
+    <link href="../static/css/callendar_core.css"
           th:href="@{/css/core.css}"
           rel="stylesheet" media="screen" />
     <script src="http://cdn.jsdelivr.net/webjars/jquery/2.2.1/jquery.min.js"
@@ -15,25 +15,28 @@
 </head>
 <body>
 	
-	<Mylogo>
-		<h2>logo</h2>
-		<!-- <img src="JoinInlogo" alt="logo"> --> 
-	</Mylogo>
+	<filter>
+		
+		<form action="...">
+			<select name="Choose calendar">
+				<option>Calendar 1</option>
+				<option>Calendar 2</option>
+			</select>
+		</form>
+	
+	</filter>
+	
+	<adding_button>
+		<button type="button">Add event</button>
+	</adding_button>
 	
 	<header>
-		<h1>Welcome</h1>
+		<h1>Calendar</h1>
 		<strong th:text="${#temporals.format(now, 'dd/MMM/yyyy HH:mm')}">30/01/2001 11:11</strong>
 	</header>
 	
 	<nav>
-		<h3>Login:</h3>
-		<form action="...">
-			<input type="text" name="login" />
-		</form>
-		<h3>Password:</h3>
-		<form action="...">
-			<input type="text" name="password" />
-		</form>
+		<h1>Calendar will be here :D</h1>
 	</nav>
 	
 	
