@@ -1,25 +1,32 @@
 @CHARSET "UTF-8";
 
+
 body {
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     background-image: url('spotlight-03-NR.jpg');
+    
     background-size: cover;
-	position:center;
+	position: center;
+}
+
+filter {
+	position: left;
+	
+}
+
+adding_button {
+	position: right;
 }
 
 nav {
-	margin:auto;
+	margin: auto;
+	position: center;
 	width : 30%;
   	height : auto;
-    /*
-    border-top-style: 3px solid #d9d9d9;
-    border-right-style: 3px solid #8c8c8c;
-    border-bottom-style: 3px solid #8c8c8c;
-    border-left-style: 3px solid #d9d9d9;
-    */
     border-style: dashed;
-	position: center;
 	color: #004b66;
 	padding-top: 5px;
 	padding-bottom: 15px;
@@ -33,3 +40,6 @@ header {
 	position: center;
 	
 }
+
+
+
