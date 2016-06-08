@@ -7,10 +7,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class CallendarController {
-	@RequestMapping(value = "/callendar")
+public class CalendarController {	
+	
+	@RequestMapping(value = "/calendar")
 	String callendar(Model model) {
 		model.addAttribute("now", LocalDateTime.now());
-		return "callendar";
+		return "calendar";
 	}
 }

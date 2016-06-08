@@ -1,14 +1,16 @@
 @CHARSET "UTF-8";
 
+
 body {
     padding-top: 60px;
     padding-bottom: 40px;
-    background-image: url('spotlight-03-NR.jpg');
+    background-image: url('../images/spotlight-03-NR.jpg');
+    
     background-size: cover;
 	position:center;
 }
 
-nav {
+#nav {
 	margin:auto;
 	width : 30%;
   	height : auto;
@@ -28,7 +30,7 @@ nav {
 	
 }
 
-header {
+#header {
 	text-align: center;
 	position: center;
 	

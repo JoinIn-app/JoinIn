@@ -6,22 +6,21 @@ body {
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
-    background-image: url('spotlight-03-NR.jpg');
-    
+    background-image: url('../images/spotlight-03-NR.jpg');
     background-size: cover;
 	position: center;
 }
 
-filter {
+#filter {
 	position: left;
 	
 }
 
-adding_button {
+#adding_button {
 	position: right;
 }
 
-nav {
+#calendar {
 	margin: auto;
 	position: center;
 	width : 30%;
@@ -35,7 +34,7 @@ nav {
 	
 }
 
-header {
+#header {
 	text-align: center;
 	position: center;
 	
