@@ -1,0 +1,70 @@
+@CHARSET "UTF-8";
+
+
+html, body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+body {
+    background-image: url('spotlight-03-NR.jpg');
+    background-size: cover;
+	position: center;
+}
+
+#web_name {
+	text-align: center;
+}
+
+#mylogo	{
+	background-image: url('logo.png');
+ 	width : 327px;
+  	height : 100px;
+	background-size: cover;
+	margin-left : 50px;
+	
+}
+
+
+#nav {
+	background-image: url("calendar_background.png");
+	background-size: cover;
+	margin: auto;
+	position: center;
+  	height : 700px;
+
+	padding-top: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
+	text-align: center;
+	position: center;
+	color: #ffffff;
+}
+
+
+
+#delete_button {
+	float: left;
+}
+
+#adding_button {
+  float: right;
+}
+
+#buttons {
+	padding-top: 30px;
+	color: #000000;
+}
+#nav form {
+	color: #000000;
+	
+}
+
+
+
+
+
+

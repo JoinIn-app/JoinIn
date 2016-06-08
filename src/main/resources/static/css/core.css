@@ -9,6 +9,7 @@ body {
     background-size: cover;
 	position:center;
 }
+<<<<<<< HEAD
 
 #nav {
 	margin:auto;
@@ -31,7 +32,36 @@ body {
 }
 
 #header {
-	text-align: center;
-	position: center;
+=======
+#mylogo	{
+	background-image: url('logo.png');
+ 	width : 327px;
+  	height : 100px;
+	background-size: cover;
+	margin-left : 50px;
 	
 }
+
+#nav {
+	background-image: url("login_background2.png");
+	background-size: cover;
+	margin:auto;
+	width : 400px;
+  	height : 400px;
+  	
+	padding-top: 50px;
+	color: #ffffff;
+>>>>>>> refs/remotes/origin/Asia
+	text-align: center;
+	position: center;
+}
+
+h3{
+	color: #000000;
+}
+
+#nav form {
+	color:#000000;
+}
+
+

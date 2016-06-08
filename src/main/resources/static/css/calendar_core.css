@@ -1,44 +1,95 @@
 @CHARSET "UTF-8";
 
 
+html, body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
 body {
+<<<<<<< HEAD:src/main/resources/static/css/calendar_core.css
     padding-top: 30px;
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
     background-image: url('../images/spotlight-03-NR.jpg');
+=======
+    background-image: url('spotlight-03-NR.jpg');
+>>>>>>> refs/remotes/origin/Asia:src/main/resources/static/css/callendar_core.css
     background-size: cover;
 	position: center;
 }
 
+<<<<<<< HEAD:src/main/resources/static/css/calendar_core.css
 #filter {
 	position: left;
+=======
+#web_name {
+	text-align: center;
+}
+
+#mylogo	{
+	background-image: url('logo.png');
+ 	width : 327px;
+  	height : 100px;
+	background-size: cover;
+	margin-left : 50px;
+	
+}
+
+#filter {
+>>>>>>> refs/remotes/origin/Asia:src/main/resources/static/css/callendar_core.css
 	
 }
 
 #adding_button {
+<<<<<<< HEAD:src/main/resources/static/css/calendar_core.css
 	position: right;
 }
 
 #calendar {
-	margin: auto;
-	position: center;
-	width : 30%;
-  	height : auto;
-    border-style: dashed;
-	color: #004b66;
-	padding-top: 5px;
-	padding-bottom: 15px;
-	padding-left: 30px;
-	padding-right: 30px;
+=======
 	
 }
 
+
+#nav {
+	background-image: url("calendar_background.png");
+	background-size: cover;
+>>>>>>> refs/remotes/origin/Asia:src/main/resources/static/css/callendar_core.css
+	margin: auto;
+	position: center;
+  	height : 700px;
+
+<<<<<<< HEAD:src/main/resources/static/css/calendar_core.css
 #header {
+=======
+	padding-top: 100px;
+>>>>>>> refs/remotes/origin/Asia:src/main/resources/static/css/callendar_core.css
 	text-align: center;
 	position: center;
-	
+	color: #ffffff;
 }
+
+
+
+#adding_button {
+	float: right;
+}
+#admin_button{
+	float: right;
+}
+
+#buttons {
+	margin-left : 50px;
+	margin-right : 50px;
+}
+
+
+
 
 
 

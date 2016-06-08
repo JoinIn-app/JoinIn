@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <title>JoinIn</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen" />
+    <link href="../static/css/callendar_core.css"
+          th:href="@{/css/core.css}"
+          rel="stylesheet" media="screen" />
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.2.1/jquery.min.js"
+            th:src="@{/webjars/jquery/2.2.1/jquery.min.js}"></script>
+</head>
+<body>
+	<div id="header">
+		<div id="mylogo">
+			<h2>   </h2>
+		</div>
+		
+		<div id="web_name">
+			<h1>Calendar</h1>
+			<strong th:text="${#temporals.format(now, 'dd/MMM/yyyy HH:mm')}">30/01/2001 11:11</strong>
+		</div>
+	
+	</div>
+	<div id="buttons">
+		<div id="adding_button">
+			<button type="button">Add event</button>
+		</div>
+		<div id="admin_button">
+			<button type="button">Admin button</button>
+		</div>
+		<div id="filter">
+			<form action="...">
+				<select name="Choose calendar">
+					<option>Calendar 1</option>
+					<option>Calendar 2</option>
+				</select>
+			</form>
+		</div>
+	</div>
+	
+		
+	
+	<div id="nav">
+		
+		<h1>Calendar will be here :D</h1>
+	</div>
+	
+	
+</body>
+</html>
