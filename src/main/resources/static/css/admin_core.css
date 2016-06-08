@@ -28,14 +28,6 @@ body {
 	
 }
 
-#filter {
-	
-}
-
-#adding_button {
-	
-}
-
 
 #nav {
 	background-image: url("calendar_background.png");
@@ -45,6 +37,8 @@ body {
   	height : 700px;
 
 	padding-top: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
 	text-align: center;
 	position: center;
 	color: #ffffff;
@@ -52,16 +46,21 @@ body {
 
 
 
-#adding_button {
-	float: right;
+#delete_button {
+	float: left;
 }
-#admin_button{
-	float: right;
+
+#adding_button {
+  float: right;
 }
 
 #buttons {
-	margin-left : 50px;
-	margin-right : 50px;
+	padding-top: 30px;
+	color: #000000;
+}
+#nav form {
+	color: #000000;
+	
 }
 
 

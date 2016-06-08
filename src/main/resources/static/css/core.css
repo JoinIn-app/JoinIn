@@ -9,29 +9,34 @@ body {
     background-size: cover;
 	position:center;
 }
-
-nav {
-	margin:auto;
-	width : 30%;
-  	height : auto;
-    /*
-    border-top-style: 3px solid #d9d9d9;
-    border-right-style: 3px solid #8c8c8c;
-    border-bottom-style: 3px solid #8c8c8c;
-    border-left-style: 3px solid #d9d9d9;
-    */
-    border-style: dashed;
-	position: center;
-	color: #004b66;
-	padding-top: 5px;
-	padding-bottom: 15px;
-	padding-left: 30px;
-	padding-right: 30px;
+#mylogo	{
+	background-image: url('logo.png');
+ 	width : 327px;
+  	height : 100px;
+	background-size: cover;
+	margin-left : 50px;
 	
 }
 
-header {
+#nav {
+	background-image: url("login_background2.png");
+	background-size: cover;
+	margin:auto;
+	width : 400px;
+  	height : 400px;
+  	
+	padding-top: 50px;
+	color: #ffffff;
 	text-align: center;
 	position: center;
-	
 }
+
+h3{
+	color: #000000;
+}
+
+#nav form {
+	color:#000000;
+}
+
+
