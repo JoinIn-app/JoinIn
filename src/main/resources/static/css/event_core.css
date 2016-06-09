@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    background-image: url('spotlight-03-NR.jpg');
+    background-image: url('../images/spotlight-03-NR.jpg');
     background-size: cover;
 	position: center;
 }
@@ -20,7 +20,7 @@ body {
 }
 
 #mylogo	{
-	background-image: url('logo.png');
+	background-image: url('../images/logo.png');
  	width : 327px;
   	height : 100px;
 	background-size: cover;
@@ -30,7 +30,7 @@ body {
 
 
 #nav {
-	background-image: url("calendar_background.png");
+	background-image: url("../images/calendar_background.png");
 	background-size: cover;
 	margin: auto;
 	position: center;
@@ -50,7 +50,7 @@ body {
 	float: left;
 }
 
-#adding_button {
+#edit_button {
   float: right;
 }
 

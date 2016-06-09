@@ -18,35 +18,67 @@
 	<script src='libs/moment/moment.min.js'></script>
 	<script src='libs/fullcalendar/fullcalendar.js'></script>
 	
-	<script>
+	<script th:inline="javascript">
 		$(document).ready(function() {
-		    $('#calendar').fullCalendar({
-		        // put your options and callbacks here
-		    })	
+			var date = new Date();
+            var d = date.getDate();
+            var m = date.getMonth();
+            var y = date.getFullYear();
+            
+            var path = /*[[@{/event/getEvent}]]*/ 'noPath';
+			    $('#calendar').fullCalendar({
+			    	header: {
+			    		left: 'prev,next today',
+						center: 'title',
+						right: 'month,agendaWeek,agendaDay'
+			        },
+			        defaultView: 'month',
+			        buttonText: {
+			            today: 'Today',
+			            day: 'Day',
+			            week: 'Week',
+			            month: 'Month',
+	
+			        },
+			        weekends: true, 
+			        editable: true,
+			        eventLimit: true, // allow "more" link when too many events
+			        events: path,
+			        eventRender: function(event, element) {
+			            element.attr('title', event.description);
+			        }
+			    })
 		});
 	</script>
     
 </head>
 <body>
-	
-	<div id="filter">
-		
-		<form action="...">
-			<select name="Choose calendar">
-				<option>Calendar 1</option>
-				<option>Calendar 2</option>
-			</select>
-		</form>
-	
-	</div>
-	
-	<div id="adding_button">
-		<button type="button">Add event</button>
-	</div>
-	
 	<div id="header">
-		<h1>Calendar</h1>
-		<strong th:text="${#temporals.format(now, 'dd/MMM/yyyy HH:mm')}">30/01/2001 11:11</strong>
+		<div id="mylogo">
+			<h2>   </h2>
+		</div>
+		
+		<div id="web_name">
+			<h1>Calendar</h1>
+			<strong th:text="${#temporals.format(now, 'dd/MMM/yyyy HH:mm')}">30/01/2001 11:11</strong>
+		</div>
+	</div>
+	
+	<div id="buttons">
+		<div id="adding_button">
+			<button type="button">Add event</button>
+		</div>
+		<div id="admin_button">
+			<button type="button">Admin button</button>
+		</div>
+		<div id="filter">
+			<form action="...">
+				<select name="Choose calendar">
+					<option>Calendar 1</option>
+					<option>Calendar 2</option>
+				</select>
+			</form>
+		</div>
 	</div>
 	
 	<div id="calendar"></div>
