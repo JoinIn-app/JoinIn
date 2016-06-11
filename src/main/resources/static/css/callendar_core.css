@@ -28,43 +28,19 @@ body {
 	
 }
 
-#filter {
-	
-}
-
-#adding_button {
-	
-}
-
 
 #nav {
-	background-image: url("calendar_background.png");
-	background-size: cover;
+	//background-image: url("calendar_background.png");
+	//background-size: cover;
+	background-color: #abdbd6;
 	margin: auto;
 	position: center;
   	height : 700px;
 
-	padding-top: 100px;
 	text-align: center;
 	position: center;
 	color: #ffffff;
 }
-
-
-
-#adding_button {
-	float: right;
-}
-#admin_button{
-	float: right;
-}
-
-#buttons {
-	margin-left : 50px;
-	margin-right : 50px;
-}
-
-
 
 
 

@@ -30,39 +30,22 @@ body {
 
 
 #nav {
-	background-image: url("calendar_background.png");
-	background-size: cover;
+	//background-image: url("calendar_background.png");
+	//background-size: cover;
 	margin: auto;
 	position: center;
   	height : 700px;
 
-	padding-top: 100px;
+	padding-top: 15px;
 	padding-left: 100px;
 	padding-right: 100px;
 	text-align: center;
 	position: center;
-	color: #ffffff;
-}
-
-
-
-#delete_button {
-	float: left;
-}
-
-#adding_button {
-  float: right;
 }
 
 #buttons {
-	padding-top: 30px;
-	color: #000000;
+	padding-top :15px;
 }
-#nav form {
-	color: #000000;
-	
-}
-
 
 
 
