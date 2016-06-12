@@ -23,7 +23,6 @@
 		</div>
 		
 		<div id="web_name">
-			<h1>Account </h1>
 			<strong th:text="${#temporals.format(now, 'dd/MMM/yyyy HH:mm')}">30/01/2001 11:11</strong>
 		</div>
 	
@@ -31,29 +30,39 @@
 	
 		
 	<div id="nav">
+		<div class="panel panel-default">
 		
-		<h3>Name:</h3>
-			<form action="...">
-				<input type="text" name="name" />
-			</form>
-		<h3>job:</h3>
-			<form action="...">
-				<input type="text" name="job" />
-			</form>
-		<h3>calendars:</h3>
-			<form action="...">
-				<input type="text" name="calendars" />
-			</form>
-		
-		<div id="buttons">
-			<div id="adding_button">
-				<button type="button">Add account</button>
-			</div>
-			<div id="delete_button">
-				<button type="button">Delete delete</button>
-			</div>
-		
-		</div>
+	    	<div class="panel-heading">
+	        	<h3 class="panel-title">Account</h3>
+	       	</div>
+	       	
+	    	<div class="panel-body">
+	        
+		        <h3>Name:</h3>
+				<form action="...">
+					<input type="text" name="name" />
+				</form>
+				
+				<h3>job:</h3>
+				<form action="...">
+					<input type="text" name="job" />
+				</form>
+				
+				<h3>calendars:</h3>
+				<form action="...">
+					<input type="text" name="calendars" />
+				</form>
+				
+				<div id="buttons">
+					<p>
+						<button type="button" class="btn btn-default">Create Account</button>
+						<button type="button" class="btn btn-default">Cancel</button>
+							
+					</p>
+				</div>
+				
+	        </div>
+	   </div>
 	</div>
 	
 	

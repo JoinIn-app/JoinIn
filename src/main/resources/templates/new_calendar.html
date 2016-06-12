@@ -7,11 +7,9 @@
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.6/css/bootstrap.min.css"
           th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.min.css}"
           rel="stylesheet" media="screen" />
-          
     <link href="../static/css/event_core.css"
-          th:href="@{/css/event_core.css}"
+          th:href="@{/css/core.css}"
           rel="stylesheet" media="screen" />
-          
     <script src="http://cdn.jsdelivr.net/webjars/jquery/2.2.1/jquery.min.js"
             th:src="@{/webjars/jquery/2.2.1/jquery.min.js}"></script>
 </head>
@@ -38,22 +36,17 @@
 	       	</div>
 	       	
 	    	<div class="panel-body">
-	        	
-	        	<h3>Title:</h3>
+	        
+		        <h3>Name:</h3>
 				<form action="...">
-					<input type="text" name="event_title" />
+					<input type="text" name="date" />
 				</form>
 				
-				<h3>Start Date:</h3>
+				<h3>Users:</h3>
 				<form action="...">
-					<input type="text" name="event_start" />
+					<input type="text" name="event_name" />
 				</form>
 				
-				<h3>End Date:</h3>
-				<form action="...">
-					<input type="text" name="event_end" />
-				</form>	
-							
 				<h3>Description:</h3>
 				<form action="...">
 					<input type="text" name="event_description" />
@@ -62,14 +55,15 @@
 				
 				<div id="buttons">
 					<p>
-						<button type="button" class="btn btn-default">Create Event</button>
+						<button type="button" class="btn btn-default">Create calendar</button>
 						<button type="button" class="btn btn-default">Cancel</button>
 							
 					</p>
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
+	
 	
 	
 </body>
