@@ -2,100 +2,107 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head lang="en">
 
-    <title>JoinIn</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.6/css/bootstrap.min.css"
-          th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.min.css}"
-          rel="stylesheet" media="screen" />
-          
-    <link href="css/calendar_core.css" th:href="@{/css/calendar_core.css}" rel="stylesheet" media="screen" />                           
-	
-	<script src="http://cdn.jsdelivr.net/webjars/jquery/2.2.1/jquery.min.js"
-            th:src="@{/webjars/jquery/2.2.1/jquery.min.js}"></script>
-            
-    <link href='libs/fullcalendar/fullcalendar.css' rel='stylesheet' />
-	<link href='libs/fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />        
-	<script src='libs/moment/moment.min.js'></script>
-	<script src='libs/fullcalendar/fullcalendar.js'></script>
-	
-	<script th:inline="javascript">
-		$(document).ready(function() {
-			var date = new Date();
-            var d = date.getDate();
-            var m = date.getMonth();
-            var y = date.getFullYear();
-            
-            var path = /*[[@{/event/getEvent}]]*/ 'noPath';
-			    $('#calendar').fullCalendar({
-			    	header: {
-			    		left: 'prev,next today',
-						center: 'title',
-						right: 'month,agendaWeek,agendaDay'
-			        },
-			        defaultView: 'month',
-			        buttonText: {
-			            today: 'Today',
-			            day: 'Day',
-			            week: 'Week',
-			            month: 'Month',
-	
-			        },
-			        weekends: true, 
-			        editable: true,
-			        eventLimit: true, // allow "more" link when too many events
-			        events: path,
-			        eventRender: function(event, element) {
-			            element.attr('title', event.description);
-			        }
-			    })
-		});
-	</script>
-    
+<title>JoinIn</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link
+	href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+	th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.min.css}"
+	rel="stylesheet" media="screen" />
+
+<link href="css/calendar_core.css" th:href="@{/css/calendar_core.css}"
+	rel="stylesheet" media="screen" />
+
+<script src="http://cdn.jsdelivr.net/webjars/jquery/2.2.1/jquery.min.js"
+	th:src="@{/webjars/jquery/2.2.1/jquery.min.js}"></script>
+
+<link href='libs/fullcalendar/fullcalendar.css' rel='stylesheet' />
+<link href='libs/fullcalendar/fullcalendar.print.css' rel='stylesheet'
+	media='print' />
+<script src='libs/moment/moment.min.js'></script>
+<script src='libs/fullcalendar/fullcalendar.js'></script>
+
+<script th:inline="javascript">
+	$(document).ready(function() {
+		var date = new Date();
+		var d = date.getDate();
+		var m = date.getMonth();
+		var y = date.getFullYear();
+
+		var path = /*[[@{/event/getEvent}]]*/'noPath';
+		$('#calendar').fullCalendar({
+			header : {
+				left : 'prev,next today',
+				center : 'title',
+				right : 'month,agendaWeek,agendaDay'
+			},
+			defaultView : 'month',
+			buttonText : {
+				today : 'Today',
+				day : 'Day',
+				week : 'Week',
+				month : 'Month',
+
+			},
+			weekends : true,
+			editable : true,
+			eventLimit : true, // allow "more" link when too many events
+			events : path,
+			eventRender : function(event, element) {
+				element.attr('title', event.description);
+			}
+		})
+	});
+</script>
+
 </head>
 <body>
 	<div id="header">
 		<div id="mylogo">
-			<h2>   </h2>
+			<h2></h2>
 		</div>
-		
+
 		<div id="web_name">
 			<h1>Calendar</h1>
-			<strong th:text="${#temporals.format(now, 'dd/MMM/yyyy HH:mm')}">30/01/2001 11:11</strong>
+			<strong th:text="${#temporals.format(now, 'dd/MMM/yyyy HH:mm')}">30/01/2001
+				11:11</strong>
 		</div>
 	</div>
-	
+
 	<nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-            <li class="active">
-              <li><a href="#admin">Admin button</a></li>
-              <li><a href="#event">Add event</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Choose calendar <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Personal Calendar</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">List of calendars</li>
-                  <li><a href="#">Calendar 1</a></li>
-                  <li><a href="#">Calendar 2</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-    </nav>
-	
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<li><a href="#admin">Admin button</a></li>
+						<li><a href="#event">Add event</a></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle"
+							data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">Choose calendar <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Personal Calendar</a></li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">List of calendars</li>
+								<li><a href="#">Calendar 1</a></li>
+								<li><a href="#">Calendar 2</a></li>
+							</ul>
+						</li>
+					</li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</nav>
+
 	<div id="calendar"></div>
-	
-	
+
+
 </body>
 </html>

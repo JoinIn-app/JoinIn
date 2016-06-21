@@ -16,9 +16,16 @@ public class AdminController {
 	UserRepository userRepository;
 	
 	@RequestMapping(value = "/admin")
-	String event(Model model) {
+	String admin(Model model) {
 		model.addAttribute("now", LocalDateTime.now());
 		//model.addAttribute("testUser", userRepository.findOne(1L));
 		return "admin";
+	}
+	
+	@RequestMapping(value = "/new_admin")
+	String newAdmin(Model model) {
+		model.addAttribute("now", LocalDateTime.now());
+		//model.addAttribute("testUser", userRepository.findOne(1L));
+		return "new_admin";
 	}
 }
