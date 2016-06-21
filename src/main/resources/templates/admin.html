@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <title>JoinIn</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen" />
+          
+    <link href="../static/css/admin_core.css"
+          th:href="@{/css/admin_core.css}"
+          rel="stylesheet" media="screen" />
+          
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.2.1/jquery.min.js"
+            th:src="@{/webjars/jquery/2.2.1/jquery.min.js}"></script>
+</head>
+<body>
+	
+	<div id="header">
+		<div id="mylogo">
+			<h2>   </h2>
+		</div>
+		
+		<div id="web_name">
+			<strong th:text="${#temporals.format(now, 'dd/MMM/yyyy HH:mm')}">30/01/2001 11:11</strong>
+		</div>
+	
+	</div>
+	
+		
+	<div id="nav">
+		
+		<div class="panel panel-default">
+	    	<div class="panel-heading">
+	        	<h3 class="panel-title">Admin</h3>
+	       	</div>
+	    	<div class="panel-body">
+	        
+	        
+          		<div class="list-group">
+           			<a href="#" class="list-group-item active">List of Accounts</a>
+            		<a href="#" class="list-group-item">Account 1</a>
+            		<a href="#" class="list-group-item">Account 2</a>
+            		<a href="#" class="list-group-item">Account 3</a>
+          		</div>
+				<p>
+					<button type="button" class="btn btn-default">Create Account</button>
+					<button type="button" class="btn btn-default">Edit Account</button>
+					<button type="button" class="btn btn-default">Delete Account</button>
+				</p>
+				<div class="list-group">
+           			<a href="#" class="list-group-item active">List of Calendars</a>
+            		<a href="#" class="list-group-item">Calendar 1</a>
+            		<a href="#" class="list-group-item">Calendar 2</a>
+            		<a href="#" class="list-group-item">Calendar 3</a>
+          		</div>
+				<p>
+					<button type="button" class="btn btn-default">Create Calendar</button>
+					<button type="button" class="btn btn-default">Edit Calendar</button>
+					<button type="button" class="btn btn-default">Delete Calendar</button>
+	        	</p>
+	        </div>
+	        
+	        
+	   </div>
+          
+
+		
+		
+	</div>
+	
+	
+	
+</body>
+</html>

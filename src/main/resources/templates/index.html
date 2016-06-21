@@ -14,8 +14,35 @@
             th:src="@{/webjars/jquery/2.2.1/jquery.min.js}"></script>
 </head>
 <body>
-	<h1>Hello</h1>
-	<h2>World</h2>
-	<strong th:text="${#temporals.format(now, 'dd/MMM/yyyy HH:mm')}">30/01/2001 11:11</strong>
+     <div id="mylogo">
+          <h2>   </h2>
+     </div>
+     
+     
+     <div id="nav">
+          
+          <h1>Welcome</h1>
+          <strong th:text="${#temporals.format(now, 'dd/MMM/yyyy HH:mm')}">30/01/2001 11:11</strong>
+     
+
+          <h3>Login:</h3>
+          <form action="...">
+               <input type="text" name="login" />
+          </form>
+          <h3>Password:</h3>
+          <form action="...">
+               <input type="text" name="password" />
+          </form>
+          <div id = "buttons">
+               <button type="button" class="btn btn-default">Log In</button>
+               <button type="button" class="btn btn-default">Sign In</button>
+          </div>
+     </div>
+
+     
+     <p th:text="${testUser.getLastName()}">
+          test
+     </p>
+          
 </body>
 </html>

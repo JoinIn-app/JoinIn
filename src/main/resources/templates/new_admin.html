@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <title>JoinIn</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen" />
+    <link href="../static/css/event_core.css"
+          th:href="@{/css/core.css}"
+          rel="stylesheet" media="screen" />
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.2.1/jquery.min.js"
+            th:src="@{/webjars/jquery/2.2.1/jquery.min.js}"></script>
+</head>
+<body>
+	
+	<div id="header">
+		<div id="mylogo">
+			<h2>   </h2>
+		</div>
+		
+		<div id="web_name">
+			<strong th:text="${#temporals.format(now, 'dd/MMM/yyyy HH:mm')}">30/01/2001 11:11</strong>
+		</div>
+	
+	</div>
+	
+		
+	<div id="nav">
+	
+		<div class="panel panel-default">
+		
+	    	<div class="panel-heading">
+	        	<h3 class="panel-title">Admin</h3>
+	       	</div>
+	       	
+	    	<div class="panel-body">
+	        
+		        <h3>Name:</h3>
+				<form action="...">
+					<input type="text" name="date" />
+				</form>
+				
+				<h3>Company Name:</h3>
+				<form action="...">
+					<input type="text" name="date" />
+				</form>
+				
+				<h3>Password:</h3>
+				<form action="...">
+					<input type="text" name="event_name" />
+				</form>
+				
+				<h3>Confirm Password:</h3>
+				<form action="...">
+					<input type="text" name="event_description" />
+				</form>
+		
+				
+				<div id="buttons">
+					<p>
+						<button type="button" class="btn btn-default">Create Admin</button>
+						<button type="button" class="btn btn-default">Cancel</button>
+							
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+</body>
+</html>

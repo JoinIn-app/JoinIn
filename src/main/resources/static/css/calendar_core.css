@@ -1,0 +1,69 @@
+@CHARSET "UTF-8";
+
+
+html, body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+body {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-image: url('../images/spotlight-03-NR.jpg');
+    background-size: cover;
+	position: center;
+}
+
+#web_name {
+	text-align: center;
+}
+
+#mylogo	{
+	background-image: url('../images/logo.png');
+ 	width : 327px;
+  	height : 100px;
+	background-size: cover;
+	margin-left : 50px;
+	
+}
+
+#filter {
+	position: left;
+}
+
+#calendar {
+	//background-image: url("../images/calendar_background.png");
+	//background-size: cover;
+	background-color: #abdbd6;
+	margin: auto;
+	position: center;
+  	height : 700px;
+  	max-width: 900px;
+	margin: 0 auto;
+}
+
+#header {
+	padding-top: 100px;
+	text-align: center;
+	position: center;
+}
+
+#adding_button {
+	float: right;
+}
+#admin_button{
+	float: right;
+}
+
+#buttons {
+	margin-left : 50px;
+	margin-right : 50px;
+}
+
+.hover-end{padding:0;margin:0;font-size:75%;text-align:center;position:absolute;bottom:0;width:100%;opacity:.8}
+

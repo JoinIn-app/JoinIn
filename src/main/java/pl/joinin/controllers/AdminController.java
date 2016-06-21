@@ -10,15 +10,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import pl.joinin.repositories.UserRepository;
 
 @Controller
-public class HomeController {
+public class AdminController {
 	
 	@Autowired
 	UserRepository userRepository;
 	
-	@RequestMapping(value = "/")
-	String index(Model model) {
+	@RequestMapping(value = "/admin")
+	String admin(Model model) {
 		model.addAttribute("now", LocalDateTime.now());
-		model.addAttribute("testUser", userRepository.findOne(1L));
-		return "index";
+		//model.addAttribute("testUser", userRepository.findOne(1L));
+		return "admin";
+	}
+	
+	@RequestMapping(value = "/new_admin")
+	String newAdmin(Model model) {
+		model.addAttribute("now", LocalDateTime.now());
+		//model.addAttribute("testUser", userRepository.findOne(1L));
+		return "new_admin";
 	}
 }

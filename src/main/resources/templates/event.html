@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <title>JoinIn</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen" />
+          
+    <link href="../static/css/event_core.css"
+          th:href="@{/css/event_core.css}"
+          rel="stylesheet" media="screen" />
+          
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.2.1/jquery.min.js"
+            th:src="@{/webjars/jquery/2.2.1/jquery.min.js}"></script>
+</head>
+<body>
+	
+	<div id="header">
+		<div id="mylogo">
+			<h2>   </h2>
+		</div>
+		
+		<div id="web_name">
+			<strong th:text="${#temporals.format(now, 'dd/MMM/yyyy HH:mm')}">30/01/2001 11:11</strong>
+		</div>
+	
+	</div>
+	
+		
+	<div id="nav">
+	
+		<div class="panel panel-default">
+		
+	    	<div class="panel-heading">
+	        	<h3 class="panel-title">Event</h3>
+	       	</div>
+	       	
+	    	<div class="panel-body">
+	        	
+	        	<h3>Title:</h3>
+				<form action="...">
+					<input type="text" name="event_title" />
+				</form>
+				
+				<h3>Start Date:</h3>
+				<form action="...">
+					<input type="text" name="event_start" />
+				</form>
+				
+				<h3>End Date:</h3>
+				<form action="...">
+					<input type="text" name="event_end" />
+				</form>	
+							
+				<h3>Description:</h3>
+				<form action="...">
+					<input type="text" name="event_description" />
+				</form>
+		
+				
+				<div id="buttons">
+					<p>
+						<button type="button" class="btn btn-default">Create Event</button>
+						<button type="button" class="btn btn-default">Cancel</button>
+							
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+	
+</body>
+</html>
